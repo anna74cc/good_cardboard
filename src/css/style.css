@@ -399,3 +399,8 @@ input:focus, button:focus {
 .products-block__button {
   margin-right: 12px;
 }
+
+.production {
+  padding-top: 87px;
+  padding-bottom: 90px;
+}

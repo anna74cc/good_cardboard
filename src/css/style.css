@@ -76,9 +76,16 @@ input:focus, button:focus {
   position: absolute;
   top: 0;
   z-index: 99;
-  height: 100px;
+  height: 100%;
   width: 22px;
+}
+
+.slider-arrow_prod {
   border: 1px solid #fd9c28;
+}
+
+.slider-arrow:hover {
+  cursor: pointer;
 }
 
 .slider-arrow_right {
@@ -86,9 +93,17 @@ input:focus, button:focus {
   background: #fff url(../img/arrow-right.png) center no-repeat;
 }
 
+.slider-arrow_right:hover {
+  background: #fd9c28 url(../img/arrow-right_active.png) center no-repeat;
+}
+
 .slider-arrow_left {
   left: 0;
   background: #fff url(../img/arrow-left.png) center no-repeat;
+}
+
+.slider-arrow_left:hover {
+  background: #fd9c28 url(../img/arrow-left_active.png) center no-repeat;
 }
 
 .header {
@@ -439,4 +454,14 @@ input:focus, button:focus {
 
 .production-slider_bottom img {
   margin: 0 6px;
+}
+
+.feedback {
+  padding-top: 55px;
+  padding-bottom: 66px;
+  background-color: #f4f4f4;
+}
+
+.feedback-slider img {
+  margin: 0 auto;
 }

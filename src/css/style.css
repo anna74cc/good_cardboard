@@ -106,6 +106,23 @@ input:focus, button:focus {
   background: #fd9c28 url(../img/arrow-left_active.png) center no-repeat;
 }
 
+.dark-bg {
+  position: relative;
+  z-index: 2;
+}
+
+.dark-bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
 .header {
   padding: 15px 0px;
 }
@@ -162,25 +179,11 @@ input:focus, button:focus {
 }
 
 .main {
-  position: relative;
   padding-top: 65px;
   padding-bottom: 60px;
   background: #373737 url(../img/main/main_bg.png) center no-repeat;
   background-size: cover;
   color: #ffffff;
-  z-index: 1;
-}
-
-.main::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
 }
 
 .main-text__title {
@@ -227,8 +230,8 @@ input:focus, button:focus {
   border-radius: 4px;
   border: none;
   vertical-align: middle;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  width: 100%;
+  max-width: 365px;
 }
 
 .form-small {
@@ -439,6 +442,11 @@ input:focus, button:focus {
   padding-bottom: 90px;
 }
 
+.production-slider {
+  position: relative;
+  z-index: 2;
+}
+
 .production-slider_top {
   margin-bottom: 13px;
   height: 377px;
@@ -456,6 +464,33 @@ input:focus, button:focus {
   margin: 0 6px;
 }
 
+.production-text {
+  max-width: 379px;
+}
+
+.production-text__title {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: -10%;
+  margin-top: 19px;
+  margin-bottom: 28px;
+  padding-left: 10%;
+  width: 110%;
+  z-index: -1;
+  color: #ffffff;
+  background-color: #fd9c28;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.production-text__descr {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: justify;
+}
+
 .feedback {
   padding-top: 55px;
   padding-bottom: 66px;
@@ -464,4 +499,73 @@ input:focus, button:focus {
 
 .feedback-slider img {
   margin: 0 auto;
+}
+
+.offer {
+  padding-top: 64px;
+  padding-bottom: 59px;
+  color: #ffffff;
+  background: grey url(../img/offer/offer-bg.png) center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.offer-title {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.offer-title_small {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.offer-form__label {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.offer-form__input {
+  display: block;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+.offer-form__button {
+  margin-bottom: 9px;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts-block {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  background-color: #fff;
+  padding-top: 33px;
+  padding-bottom: 39px;
+  padding-left: 60px;
+  padding-right: 34px;
+}
+
+.contacts-block__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.contacts-block__text {
+  margin-bottom: 30px;
+}
+
+.map {
+  width: 100%;
+  height: 550px;
 }
